@@ -1,0 +1,17 @@
+Integer year = 2400;
+Boolean isLeap;
+
+if (Math.mod(year,4) == 0) {
+    isLeap = true;
+    if (Math.mod(year,100) == 0) {
+    	isLeap = false;
+    	if ((Math.mod(year,400) == 0)){
+    		isLeap = true;
+		}
+	}
+}
+else {
+    isLeap = false;
+}
+
+System.debug('The year ' + year + ' is leap? ' + isLeap);
