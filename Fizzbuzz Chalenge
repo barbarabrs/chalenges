@@ -1,0 +1,30 @@
+/* Print all the numbers from 1 to 100, but:
+- if a number is divisible by 3 : print 'fizz'
+- if a number is divisible by 5 : print 'buzz'
+- if a number is divisible by both : print 'fizzbuzz'
+*/
+String divisibleByThree = 'fizz';
+String divisibleByFive = 'buzz';
+Integer nmber = 0;
+do {
+    nmber++;
+    if(Math.mod(nmber,3) == 0){
+        if(Math.mod(nmber,5)==0){
+            System.debug(divisibleByThree + divisibleByFive);
+        }
+        else{
+            System.debug(divisibleByThree);
+        }
+        
+    }
+    else if(Math.mod(nmber,5)==0){
+        System.debug(divisibleByFive);
+    }
+   
+    else{
+        System.debug(nmber);
+    }
+    
+}
+
+while (nmber < 100);
