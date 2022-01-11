@@ -1,0 +1,13 @@
+/* print a pattern like this 
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+String caracter = '* ';
+String aux = caracter;
+for(Integer i = 0; i<5; i++){
+    System.debug(aux);
+    aux = aux + caracter;
+}
