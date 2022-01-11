@@ -1,0 +1,12 @@
+// print the 20 first number of fibonacci sequence
+Integer first = 0;
+Integer second = 1;
+Integer sum = first + second;
+Integer cont = 0;
+while (cont < 20){
+    System.debug(first);
+    first = second;
+    second = sum;
+    sum = first + second;
+    cont++;
+}
