@@ -1,4 +1,4 @@
-// print the 20 first number of fibonacci sequence
+// print the 20 first fibonacci sequence numbers
 Integer first = 0;
 Integer second = 1;
 Integer sum = first + second;
